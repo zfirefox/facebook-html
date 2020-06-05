@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Facebook</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="icon" type="image/png" href="pics/facebook-favicon.png" sizes="16x16">
+</head>
+
+<body>
+    <header>
+        <img src="pics/facebook-icon.png" alt="Facebook" class="logoHeader">
+        <div class="sectionSearch">
+            <input type="text" id="searchBar" class="searchBar" placeholder="Search"/>
+            <button type="submit" class="searchBtn" id="searchBtn">
+                <img src="pics/search-icon.png" id="searchIcon"/>
+            </button>
+        </div>
+        <div id="headerNavigation">
+            <div class="itemHeader">
+                <div id="itemPerfil">
+                    <img src="pics/profile-img.jpg" id="profilePicHeader">
+                    <div>Firefox</div>
+                </div>
+            </div>
+            <div class="itemHeader">Home</div>
+            <div class="itemHeader">Find Friends</div>
+            <div class="itemHeaderDos" id="itemHeaderDosUno">
+                <img src="pics/friend-request-icon.png" class="item">
+                <img src="pics/messenger-icon.png" class="item">
+                <img src="pics/notification-icon.png" class="item">
+            </div>
+            <div class="itemHeaderDos" id="itemHeaderDosDos">
+                <img src="pics/help-icon.png" class="item">
+                <img src="pics/arrow-icon.png" class="item">
+            </div>
+        </div>
+    </header>
+    <div id="content">
+        <div id="leftBar">
+            <div class="section">
+                <div class="item">
+                    <img src="pics/profile-img.jpg" class="profilePic">
+                    Firefox Mozilla
+                </div>
+            </div>
+            <div class="section">
+                <div class="item selected" id="itemSelectedFont">
+                    <img src="pics/icons-leftBar/newFeed-icon.png" id="icons-leftBar"/>
+                    <div>News Feed</div>
+                </div>
+                <div class="item">
+                    <img src="pics/icons-leftBar/messeger-icon.png" id="icons-leftBar"/>
+                    <div>Messenger</div>
+                </div>
+                <div class="item">
+                    <img src="pics/icons-leftBar/watch-icon.png" id="icons-leftBar"/>
+                    <div>Watch</div>
+                </div>
+                <div class="item">
+                    <img src="pics/icons-leftBar/marketplace-icon.png" id="icons-leftBar"/>
+                    <div>Marketplace</div>
+                </div>
+            </div>
+            <div class="section">
+                <div class="item" id="sectionTitle">Shortcuts</div>
+                <div class="item">
+                    <img src="pics/default-post.png" id="icons-leftBar">
+                    <div>Shortcut 1</div>
+                </div>
+                <div class="item">
+                    <img src="pics/default-post.png" id="icons-leftBar">
+                    <div>Shortcut 2</div>
+                </div>
+            </div>
+            <div class="section">
+                    <div class="item" id="sectionTitle">Explore</div>
+                <div class="item">
+                    <img src="pics/icons-leftBar/groups-icon.png" id="icons-leftBar"/>
+                    <div>Groups</div>
+                </div>
+                <div class="item">
+                    <img src="pics/icons-leftBar/pages-icon.png" id="icons-leftBar"/>
+                    <div>Pages</div>
+                </div>
+                <div class="item">
+                    <img src="pics/icons-leftBar/events-icon.png" id="icons-leftBar"/>
+                    <div>Events</div>
+                </div>
+                <div class="item">
+                    <img src="pics/tagFriends-icon.png" id="icons-leftBar"/>
+                    <div>Friend List</div>
+                </div>
+                <div class="item">
+                    <img src="pics/icons-leftBar/games-icon.png" id="icons-leftBar"/>
+                    <div>Games</div>
+                </div>
+            </div>
+        </div>
+        <div id="timeline">
+            <!--Create Post-->
+            <div class="sectionCreatePost">
+                <div id="createPostTitle">Create Post</div>
+                <div class="createPostContent">
+                    <img src="pics/profile-img.jpg" class="profilePic"/>
+                    <input type="text" class="contentText" placeholder="What's on your mind, Miguel?"/>
+                </div>
+                <div class="createOptions">
+                    <div class="OptionItem"><img src="pics/photo-icon.png" id="iconOption"/>Photo/Video</div>
+                    <div class="OptionItem"><img src="pics/tagFriends-icon.png" id="iconOption"/>Tag Friends</div>
+                    <div class="OptionItem"><img src="pics/feeling-icon.png" id="iconOption"/>Feeling/Activity</div>
+                    <div class="OptionItem"><img src="pics/options-icon.png" id="iconOption"></div>
+                </div>
+            </div>
+            <!--Post-->
+            <div id="post">
+                <div id="postHeader">
+                    <img src="pics/profile-pic.png" id="postProfilePic">
+                    <div id="postInfo">
+                        <div id="postUser">Username</div>
+                        <div id="postSecondaryInfo">
+                            <div id="postDate">Date info &#183;</div>
+                            <img src="pics/public-icon.png" id="postInfoPrivacy"/>
+                        </div>
+                    </div>
+                </div>
+                <img src="pics/default-post.png" id="postMultimedia"/>
+                <div id="reactionsInfo">
+                    <div id="counterComments"># commments</div>
+                </div>
+                <div class="reactionsBtns">
+                    <div class="action">
+                        <img src="pics/like-icon.png" id="iconAction">
+                        <div class="actionTxt">Like</div>
+                    </div>
+                    <div class="action">
+                        <img src="pics/comment-icon.png" id="iconAction">
+                        <div class="actionTxt">Comment</div>
+                    </div>
+                    <div class="action">
+                        <img src="pics/share-icon.png" id="iconAction">
+                        <div class="actionTxt">Share</div>
+                    </div>
+                </div>
+                <div class="sectionComments">
+                    <img src="pics/profile-img.jpg" id="picProfile">
+                    <input type="text" id="fieldComment" placeholder="Write a comment...">
+                </div>
+            </div>
+            <!--Post-->
+            <div id="post">
+                <div id="postHeader">
+                    <img src="pics/profile-pic.png" id="postProfilePic">
+                    <div id="postInfo">
+                        <div id="postUser">Username</div>
+                        <div id="postSecondaryInfo">
+                            <div id="postDate">Date info &#183;</div>
+                            <img src="pics/public-icon.png" id="postInfoPrivacy"/>
+                        </div>
+                    </div>
+                </div>
+                <img src="pics/default-post.png" id="postMultimedia"/>
+                <div id="reactionsInfo">
+                    <div id="counterComments"># commments</div>
+                </div>
+                <div class="reactionsBtns">
+                    <div class="action">
+                        <img src="pics/like-icon.png" id="iconAction">
+                        <div class="actionTxt">Like</div>
+                    </div>
+                    <div class="action">
+                        <img src="pics/comment-icon.png" id="iconAction">
+                        <div class="actionTxt">Comment</div>
+                    </div>
+                    <div class="action">
+                        <img src="pics/share-icon.png" id="iconAction">
+                        <div class="actionTxt">Share</div>
+                    </div>
+                </div>
+                <div class="sectionComments">
+                    <img src="pics/profile-img.jpg" id="picProfile">
+                    <input type="text" id="fieldComment" placeholder="Write a comment...">
+                </div>
+            </div>
+            <!--Post-->
+            <div id="post">
+                <div id="postHeader">
+                    <img src="pics/profile-pic.png" id="postProfilePic">
+                    <div id="postInfo">
+                        <div id="postUser">Username</div>
+                        <div id="postSecondaryInfo">
+                            <div id="postDate">Date info &#183;</div>
+                            <img src="pics/public-icon.png" id="postInfoPrivacy"/>
+                        </div>
+                    </div>
+                </div>
+                <img src="pics/default-post.png" id="postMultimedia"/>
+                <div id="reactionsInfo">
+                    <div id="counterComments"># commments</div>
+                </div>
+                <div class="reactionsBtns">
+                    <div class="action">
+                        <img src="pics/like-icon.png" id="iconAction">
+                        <div class="actionTxt">Like</div>
+                    </div>
+                    <div class="action">
+                        <img src="pics/comment-icon.png" id="iconAction">
+                        <div class="actionTxt">Comment</div>
+                    </div>
+                    <div class="action">
+                        <img src="pics/share-icon.png" id="iconAction">
+                        <div class="actionTxt">Share</div>
+                    </div>
+                </div>
+                <div class="sectionComments">
+                    <img src="pics/profile-img.jpg" id="picProfile">
+                    <input type="text" id="fieldComment" placeholder="Write a comment...">
+                </div>
+            </div>
+            <!--Post-->
+            <div id="post">
+                <div id="postHeader">
+                    <img src="pics/profile-pic.png" id="postProfilePic">
+                    <div id="postInfo">
+                        <div id="postUser">Username</div>
+                        <div id="postSecondaryInfo">
+                            <div id="postDate">Date info &#183;</div>
+                            <img src="pics/public-icon.png" id="postInfoPrivacy"/>
+                        </div>
+                    </div>
+                </div>
+                <img src="pics/default-post.png" id="postMultimedia"/>
+                <div id="reactionsInfo">
+                    <div id="counterComments"># commments</div>
+                </div>
+                <div class="reactionsBtns">
+                    <div class="action">
+                        <img src="pics/like-icon.png" id="iconAction">
+                        <div class="actionTxt">Like</div>
+                    </div>
+                    <div class="action">
+                        <img src="pics/comment-icon.png" id="iconAction">
+                        <div class="actionTxt">Comment</div>
+                    </div>
+                    <div class="action">
+                        <img src="pics/share-icon.png" id="iconAction">
+                        <div class="actionTxt">Share</div>
+                    </div>
+                </div>
+                <div class="sectionComments">
+                    <img src="pics/profile-img.jpg" id="picProfile">
+                    <input type="text" id="fieldComment" placeholder="Write a comment...">
+                </div>
+            </div>
+            <!--Post-->
+            <div id="post">
+                <div id="postHeader">
+                    <img src="pics/profile-pic.png" id="postProfilePic">
+                    <div id="postInfo">
+                        <div id="postUser">Username</div>
+                        <div id="postSecondaryInfo">
+                            <div id="postDate">Date info &#183;</div>
+                            <img src="pics/public-icon.png" id="postInfoPrivacy"/>
+                        </div>
+                    </div>
+                </div>
+                <img src="pics/default-post.png" id="postMultimedia"/>
+                <div id="reactionsInfo">
+                    <div id="counterComments"># commments</div>
+                </div>
+                <div class="reactionsBtns">
+                    <div class="action">
+                        <img src="pics/like-icon.png" id="iconAction">
+                        <div class="actionTxt">Like</div>
+                    </div>
+                    <div class="action">
+                        <img src="pics/comment-icon.png" id="iconAction">
+                        <div class="actionTxt">Comment</div>
+                    </div>
+                    <div class="action">
+                        <img src="pics/share-icon.png" id="iconAction">
+                        <div class="actionTxt">Share</div>
+                    </div>
+                </div>
+                <div class="sectionComments">
+                    <img src="pics/profile-img.jpg" id="picProfile">
+                    <input type="text" id="fieldComment" placeholder="Write a comment...">
+                </div>
+            </div>
+            <!--Post-->
+            <div id="post">
+                <div id="postHeader">
+                    <img src="pics/profile-pic.png" id="postProfilePic">
+                    <div id="postInfo">
+                        <div id="postUser">Username</div>
+                        <div id="postSecondaryInfo">
+                            <div id="postDate">Date info &#183;</div>
+                            <img src="pics/public-icon.png" id="postInfoPrivacy"/>
+                        </div>
+                    </div>
+                </div>
+                <img src="pics/default-post.png" id="postMultimedia"/>
+                <div id="reactionsInfo">
+                    <div id="counterComments"># commments</div>
+                </div>
+                <div class="reactionsBtns">
+                    <div class="action">
+                        <img src="pics/like-icon.png" id="iconAction">
+                        <div class="actionTxt">Like</div>
+                    </div>
+                    <div class="action">
+                        <img src="pics/comment-icon.png" id="iconAction">
+                        <div class="actionTxt">Comment</div>
+                    </div>
+                    <div class="action">
+                        <img src="pics/share-icon.png" id="iconAction">
+                        <div class="actionTxt">Share</div>
+                    </div>
+                </div>
+                <div class="sectionComments">
+                    <img src="pics/profile-img.jpg" id="picProfile">
+                    <input type="text" id="fieldComment" placeholder="Write a comment...">
+                </div>
+            </div>
+            <!--Post-->
+            <div id="post">
+                <div id="postHeader">
+                    <img src="pics/profile-pic.png" id="postProfilePic">
+                    <div id="postInfo">
+                        <div id="postUser">Username</div>
+                        <div id="postSecondaryInfo">
+                            <div id="postDate">Date info &#183;</div>
+                            <img src="pics/public-icon.png" id="postInfoPrivacy"/>
+                        </div>
+                    </div>
+                </div>
+                <img src="pics/default-post.png" id="postMultimedia"/>
+                <div id="reactionsInfo">
+                    <div id="counterComments"># commments</div>
+                </div>
+                <div class="reactionsBtns">
+                    <div class="action">
+                        <img src="pics/like-icon.png" id="iconAction">
+                        <div class="actionTxt">Like</div>
+                    </div>
+                    <div class="action">
+                        <img src="pics/comment-icon.png" id="iconAction">
+                        <div class="actionTxt">Comment</div>
+                    </div>
+                    <div class="action">
+                        <img src="pics/share-icon.png" id="iconAction">
+                        <div class="actionTxt">Share</div>
+                    </div>
+                </div>
+                <div class="sectionComments">
+                    <img src="pics/profile-img.jpg" id="picProfile">
+                    <input type="text" id="fieldComment" placeholder="Write a comment...">
+                </div>
+            </div>
+            <!--Post-->
+            <div id="post">
+                <div id="postHeader">
+                    <img src="pics/profile-pic.png" id="postProfilePic">
+                    <div id="postInfo">
+                        <div id="postUser">Username</div>
+                        <div id="postSecondaryInfo">
+                            <div id="postDate">Date info &#183;</div>
+                            <img src="pics/public-icon.png" id="postInfoPrivacy"/>
+                        </div>
+                    </div>
+                </div>
+                <img src="pics/default-post.png" id="postMultimedia"/>
+                <div id="reactionsInfo">
+                    <div id="counterComments"># commments</div>
+                </div>
+                <div class="reactionsBtns">
+                    <div class="action">
+                        <img src="pics/like-icon.png" id="iconAction">
+                        <div class="actionTxt">Like</div>
+                    </div>
+                    <div class="action">
+                        <img src="pics/comment-icon.png" id="iconAction">
+                        <div class="actionTxt">Comment</div>
+                    </div>
+                    <div class="action">
+                        <img src="pics/share-icon.png" id="iconAction">
+                        <div class="actionTxt">Share</div>
+                    </div>
+                </div>
+                <div class="sectionComments">
+                    <img src="pics/profile-img.jpg" id="picProfile">
+                    <input type="text" id="fieldComment" placeholder="Write a comment...">
+                </div>
+            </div>
+            <!--Post-->
+            <div id="post">
+                <div id="postHeader">
+                    <img src="pics/profile-pic.png" id="postProfilePic">
+                    <div id="postInfo">
+                        <div id="postUser">Username</div>
+                        <div id="postSecondaryInfo">
+                            <div id="postDate">Date info &#183;</div>
+                            <img src="pics/public-icon.png" id="postInfoPrivacy"/>
+                        </div>
+                    </div>
+                </div>
+                <img src="pics/default-post.png" id="postMultimedia"/>
+                <div id="reactionsInfo">
+                    <div id="counterComments"># commments</div>
+                </div>
+                <div class="reactionsBtns">
+                    <div class="action">
+                        <img src="pics/like-icon.png" id="iconAction">
+                        <div class="actionTxt">Like</div>
+                    </div>
+                    <div class="action">
+                        <img src="pics/comment-icon.png" id="iconAction">
+                        <div class="actionTxt">Comment</div>
+                    </div>
+                    <div class="action">
+                        <img src="pics/share-icon.png" id="iconAction">
+                        <div class="actionTxt">Share</div>
+                    </div>
+                </div>
+                <div class="sectionComments">
+                    <img src="pics/profile-img.jpg" id="picProfile">
+                    <input type="text" id="fieldComment" placeholder="Write a comment...">
+                </div>
+            </div>
+            <!--Post-->
+            <div id="post">
+                <div id="postHeader">
+                    <img src="pics/profile-pic.png" id="postProfilePic">
+                    <div id="postInfo">
+                        <div id="postUser">Username</div>
+                        <div id="postSecondaryInfo">
+                            <div id="postDate">Date info &#183;</div>
+                            <img src="pics/public-icon.png" id="postInfoPrivacy"/>
+                        </div>
+                    </div>
+                </div>
+                <img src="pics/default-post.png" id="postMultimedia"/>
+                <div id="reactionsInfo">
+                    <div id="counterComments"># commments</div>
+                </div>
+                <div class="reactionsBtns">
+                    <div class="action">
+                        <img src="pics/like-icon.png" id="iconAction">
+                        <div class="actionTxt">Like</div>
+                    </div>
+                    <div class="action">
+                        <img src="pics/comment-icon.png" id="iconAction">
+                        <div class="actionTxt">Comment</div>
+                    </div>
+                    <div class="action">
+                        <img src="pics/share-icon.png" id="iconAction">
+                        <div class="actionTxt">Share</div>
+                    </div>
+                </div>
+                <div class="sectionComments">
+                    <img src="pics/profile-img.jpg" id="picProfile">
+                    <input type="text" id="fieldComment" placeholder="Write a comment...">
+                </div>
+            </div>
+        </div>
+        <div id="rightBar">
+            <!--Section Stories-->
+            <div class="sectionStories">
+                <div class="storiesHeader">
+                    <div id="storiesTitle">Stories</div>
+                    <div id="storiesArchive">Archive</div>
+                    <div>&#183;</div>
+                    <div id="storiesSettings">Settings</div>
+                </div>
+                <!--Storie-->
+                <div class="storieItem">
+                    <img src="pics/add-storie-icon.png" id="myStoriePic">
+                    <div class="storieInfo">
+                        <div class="storieName">Add to Your Story</div>
+                        <div class="storieDescription">Share a photo, video or write something</div>
+                    </div>
+                </div>
+                <!--Storie-->
+                <div class="storieItem">
+                    <img src="pics/storie-pic_one.jpg" id="storiePic">
+                    <div class="storieInfo">
+                        <div class="storieName">Username</div>
+                        <div class="storieDescription"># hours ago</div>
+                    </div>
+                </div>
+                <!--Storie-->
+                <div class="storieItem">
+                    <img src="pics/storie-pic_two.jpg" id="storiePic">
+                    <div class="storieInfo">
+                        <div class="storieName">Username</div>
+                        <div class="storieDescription"># hours ago</div>
+                    </div>
+                </div>
+            </div>
+             <!--Section Suggested Groups-->
+            <div class="sectionSuggestedGroups">
+                <div class="suggestedGroupsHeader">
+                    <div id="suggestedGroups">Suggested Groups</div>
+                    <div id="seeAllGroups">See All</div>
+                </div>
+                <!--Group-->
+                <div class="boxInfoGroup">
+                    <img src="pics/poster-group_one.jpg" id="posterGroup">
+                    <div class="infoGroup">
+                        <div id="infoGroupTxt">
+                            <div id="nameGroup">Name Group</div>
+                            <div id="numMembersGroup"># members</div>
+                        </div>
+                        <div id="joinGroupBtn">
+                            <button id="joinBtn">+ Join</button>
+                        </div>
+                    </div>
+                </div>
+                <!--Group-->
+                <div class="boxInfoGroup">
+                    <img src="pics/poster-group_two.jpg" id="posterGroup">
+                    <div class="infoGroup">
+                        <div id="infoGroupTxt">
+                            <div id="nameGroup">Name Group</div>
+                            <div id="numMembersGroup"># members</div>
+                        </div>
+                        <div id="joinGroupBtn">
+                            <button id="joinBtn">+ Join</button>
+                        </div>
+                    </div>
+                </div>
+                <!--Group-->
+                <div class="boxInfoGroup">
+                    <img src="pics/poster-group_three.jpeg" id="posterGroup">
+                    <div class="infoGroup">
+                        <div id="infoGroupTxt">
+                            <div id="nameGroup">Name Group</div>
+                            <div id="numMembersGroup"># members</div>
+                        </div>
+                        <div id="joinGroupBtn">
+                            <button id="joinBtn">+ Join</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
